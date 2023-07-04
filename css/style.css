@@ -33,12 +33,44 @@ li {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: var(--primary-font);
   color: var(--slate-color);
   background-color: var(--true-white-color);
 }
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -47,6 +79,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  display: flex;
+  align-items: center;
 }
 
 .link {
@@ -62,16 +96,42 @@ body {
   list-style: none;
 }
 
-.nav-list-content {
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.header-menu-item {
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mail-tel {
+  display: flex;
+  gap: 40px;
+}
+
+.header-menu-content {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
-.nav-list-content:hover {
+.header-menu-content:hover {
   color: var(--ocean);
 }
-.nav-list-content:focus {
+.header-menu-content:focus {
   color: var(--ocean);
 }
 
@@ -79,21 +139,24 @@ body {
   font-style: normal;
 }
 
-.mail-tel {
+.mail-tel-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
 }
-.mail-tel:hover {
+.mail-tel-link:hover {
   color: var(--ocean);
 }
 
-.mail-tel:focus {
+.mail-tel-link {
   color: var(--ocean);
 }
 /* First-Secion */
+
 .hero {
+  padding-bottom: 120px;
   background-color: var(--navy-blue);
+  padding: 188px 0;
 }
 .hero-title {
   font-size: 56px;
@@ -101,8 +164,18 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
+  margin: 0 auto;
 }
-.order-service {
+
+.order-button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 48px;
+  border-radius: 4px;
+}
+
+.order-button-text {
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -111,18 +184,39 @@ body {
   letter-spacing: 0.04em;
   color: var(--true-white-color);
   cursor: pointer;
+  padding: 16px 32px;
 }
-.order-service:hover,
-.order-service:focus {
+.order-button-text:hover,
+.order-button-text:focus {
   background-color: #404bbf;
 }
 /* Second-Section */
+
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+}
+
+.benefits-item {
+  width: calc((100% - 24px * 3) / 4);
+}
+
+.benefits-list {
+  padding-right: 156px;
+  padding-left: 156px;
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
+}
+
 .benefits-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 .benefits-text {
   font-size: 16px;
@@ -137,8 +231,52 @@ body {
   text-transform: capitalize;
   color: var(--navy-blue);
   letter-spacing: 0.02em;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+
+.achievements-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
 }
 /* Fourth-Section */
+
+.our-team {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+  margin-bottom: 72px;
+  margin-top: 120px;
+}
+
+.people-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.people-names {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.jobs {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
 .who-we-are {
   background-color: var(--cloud-color);
 }
