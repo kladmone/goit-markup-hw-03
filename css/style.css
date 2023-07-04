@@ -1,7 +1,7 @@
 /* Main-Page */
 :root {
   --primary-font: "Roboto", sans-serif;
-  --logo-color: #4d5ae5;
+  ---color: #4d5ae5;
   --logo-font: "Raleway", sans-serif;
   --logo-font-weight: 800;
   --logo-font-size: 18px;
@@ -69,6 +69,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -81,6 +82,7 @@ body {
   color: var(--logo-color);
   display: flex;
   align-items: center;
+  margin-right: 76px;
 }
 
 .link {
@@ -105,6 +107,8 @@ body {
   display: flex;
   margin-left: 76px;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-menu-item {
@@ -173,6 +177,9 @@ body {
   display: block;
   margin-top: 48px;
   border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .order-button-text {
@@ -222,8 +229,19 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  height: auto;
 }
 /* Third-Section */
+
+.our-people {
+  padding-bottom: 120px;
+}
+
+.achievements-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .achievements-people {
   font-size: 36px;
   line-height: 1.11;
@@ -266,26 +284,47 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin-top: 32px;
+  text-align: center;
   margin-bottom: 8px;
+}
+
+.people-info {
+  padding: 32px 16px 32px;
 }
 
 .jobs {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
+  text-align: center;
 }
 
 .who-we-are {
   background-color: var(--cloud-color);
+  padding: 120px 0 120px;
 }
 .cards {
   background-color: var(--true-white-color);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 /* Footer */
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer {
   background-color: var(--navy-blue);
+  padding: 100px 0 100px;
 }
 .footer-span {
   color: var(--cloud-color);
@@ -294,6 +333,7 @@ body {
   line-height: 1.5;
   color: var(--cloud-color);
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 /* Portfolio-Page */
 
