@@ -212,8 +212,6 @@ body {
 }
 
 .benefits-list {
-  padding-right: 156px;
-  padding-left: 156px;
   display: flex;
   list-style-type: none;
   gap: 24px;
@@ -231,8 +229,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
-  height: auto;
 }
 /* Third-Section */
 
