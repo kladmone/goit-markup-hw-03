@@ -36,6 +36,8 @@ li {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -108,8 +110,6 @@ body {
   display: flex;
   margin-left: 76px;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-menu-item {
@@ -132,7 +132,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  padding: 24px 0 24px;
 }
 .header-menu-content:hover {
   color: var(--ocean);
@@ -150,13 +149,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate-color);
 }
+
+.mail-tel-link:focus,
 .mail-tel-link:hover {
-  color: var(--ocean);
+  color: #404bbf;
 }
 
-.mail-tel-link {
-  color: var(--ocean);
-}
 /* First-Secion */
 
 .hero {
@@ -204,7 +202,6 @@ body {
 .benefits {
   padding-top: 120px;
   padding-bottom: 120px;
-  display: flex;
 }
 
 .benefits-item {
@@ -248,13 +245,12 @@ body {
   color: var(--navy-blue);
   letter-spacing: 0.02em;
   margin: 0 auto;
-  margin-bottom: 72px;
 }
 
 .achievements-list {
   display: flex;
   gap: 24px;
-  margin-bottom: 120px;
+  margin-top: 72px;
 }
 /* Fourth-Section */
 
@@ -267,7 +263,6 @@ body {
   letter-spacing: 0.02em;
   margin: 0 auto;
   margin-bottom: 72px;
-  margin-top: 120px;
 }
 
 .people-list {
